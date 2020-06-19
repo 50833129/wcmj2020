@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>2020 Fall CP 課程W9</title>
+  <title>2020 Fall CP 課程</title>
 
 
   <meta name="HandheldFriendly" content="True" />
@@ -40,9 +40,9 @@
   <![endif]-->
 
 
-    <link href="./2020-Fall-w9-bit-Windows.html" rel="canonical" />
+    <link href="./2020-Fall-w10-bit-Windows.html" rel="canonical" />
 
-        <meta name="description" content="W9 免費軟體 Freeware 共享軟體 Shareware 綠色軟體 Greenware">
+        <meta name="description" content="MacBook 操作指南 參考資料: Mac OS X for Absolute Beginners.pdf (for @gm users only) Learn C on the Mac.pdf (for @gm users only) 這裡以 MacBook Air...">
 
         <meta name="author" content="yen">
 
@@ -53,12 +53,12 @@
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="2020 wcmj 網際日誌"/>
-<meta property="og:title" content="2020 Fall CP 課程W9"/>
-<meta property="og:description" content="W9 免費軟體 Freeware 共享軟體 Shareware 綠色軟體 Greenware"/>
+<meta property="og:title" content="2020 Fall CP 課程"/>
+<meta property="og:description" content="MacBook 操作指南 參考資料: Mac OS X for Absolute Beginners.pdf (for @gm users only) Learn C on the Mac.pdf (for @gm users only) 這裡以 MacBook Air..."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="./2020-Fall-w9-bit-Windows.html"/>
+<meta property="og:url" content="./2020-Fall-w10-bit-Windows.html"/>
 <meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2020-06-13 01:48:00+08:00"/>
+<meta property="article:published_time" content="2020-05-22 02:44:00+08:00"/>
 <meta property="article:modified_time" content=""/>
 <meta property="article:author" content="./author/yen.html">
 <meta property="article:section" content="Misc"/>
@@ -71,9 +71,9 @@
 {
   "@context": "http://schema.org",
   "@type": "Article",
-  "name": "2020 Fall CP 課程W9",
-  "headline": "2020 Fall CP 課程W9",
-  "datePublished": "2020-06-13 01:48:00+08:00",
+  "name": "2020 Fall CP 課程",
+  "headline": "2020 Fall CP 課程",
+  "datePublished": "2020-05-22 02:44:00+08:00",
   "dateModified": "",
   "author": {
     "@type": "Person",
@@ -81,8 +81,8 @@
     "url": "./author/yen.html"
   },
   "image": "./theme/images/post-bg.jpg",
-  "url": "./2020-Fall-w9-bit-Windows.html",
-  "description": "W9 免費軟體 Freeware 共享軟體 Shareware 綠色軟體 Greenware"
+  "url": "./2020-Fall-w10-bit-Windows.html",
+  "description": "MacBook 操作指南 參考資料: Mac OS X for Absolute Beginners.pdf (for @gm users only) Learn C on the Mac.pdf (for @gm users only) 這裡以 MacBook Air..."
 }
 </script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
@@ -197,11 +197,11 @@ init_mathjax();
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">2020 Fall CP 課程W9</h1>
+        <h1 class="post-title">2020 Fall CP 課程</h1>
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
                 <a href="./author/yen.html">Yen</a>
-            | <time datetime="週六 13 六月 2020">週六 13 六月 2020</time>
+            | <time datetime="週五 22 五月 2020">週五 22 五月 2020</time>
         </span>
         <!-- TODO : Modified check -->
             <div class="post-cover cover" style="background-image: url('./theme/images/post-bg.jpg')">
@@ -223,45 +223,157 @@ init_mathjax();
         <article class="post">
         <div class="inner">
             <section class="post-content">
-                <p>W9
-免費軟體 Freeware
-共享軟體 Shareware
-綠色軟體 Greenware</p>
+                <p>MacBook 操作指南
+參考資料:
+Mac OS X for Absolute Beginners.pdf (for @gm users only)</p>
+<p>Learn C on the Mac.pdf (for @gm users only)</p>
+<p>這裡以 MacBook Air 2012 年出廠, 硬體規格:</p>
+<p>macOS Catalina Version 10.15.4</p>
+<p>1.8 GHz Dual-Core Intel Core i5</p>
+<p>Memory $GB 1600 MHz DDR3</p>
+<p>Graphics Intel HD Graphics 4000 1536 MB</p>
+<p>的操作為例, 如何存活在機械設計工程系與精密機械工程科的網際內容管理課程.</p>
+<p>由於網際內容管理課程主要以 Ｗindows 10 64 位元操作系統中的 Python 3 可攜程式環境使用為主.</p>
+<p>從官方網站下載安裝 Python3
+因此 Catalina 系統中的首要任務, 便是安裝 Python 3:</p>
+<p>在 2020.05.15 從 https://www.python.org/downloads/mac-osx/ 可以下載安裝最新的 Python 3.8.3 解譯環境.</p>
+<p>安裝 pip3
+有了 python 3 環境之後, 就可以從 Lanuchpad -&gt; Other -&gt; Terminal 開啟終端機, 並從 get-pip.py 下載用來安裝 pip3 的程式碼, 以終端機上的指令進行安裝:</p>
+<p>1
+sudo python3 get-pip.py
+安裝 pip3 之後, 可以安裝 CMSiMDE 所需的 flask, flask_cors, lxml, bs4, markdown, pelican 以及 leo:</p>
+<p>1
+sudo pip3 install flask flask_cors lxml bs4 markdown pelican leo
+安裝 XQuartz
+之後, 就可以安裝 XQuartz, 以便使用 xterm 替代 terminal.</p>
+<p>接下來假如要使用 SciTE 作為文字編輯器, 建議透過 https://www.macports.org/install.php  先根據 Catalina 操作系統版本安裝 Macports 之後, 再利用:</p>
+<p>1
+sudo port install scite
+安裝 SciTE 文字編輯器.</p>
+<p>至此, 再加上 Catalina 原有的 git 指令, 使用者已經可以在 MacBook 上執行與 Windows 10 64 位元操作系統上相同的:</p>
+<p>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+git clone --recurse-submodules</p>
+<p>git add .</p>
+<p>git commit -m "commit message"</p>
+<p>git push</p>
+<p>git pull</p>
+<p>git submodule add</p>
+<p>git remote add</p>
+<p>git branch</p>
+<p>git merge
+等指令, 只是在執行 python 程式時, 必須使用:</p>
+<p>1
+2
+3
+python3 wsgi.py</p>
+<p>pip3 install certain_module
+否則直接使用 python 執行, 將會用 Python 2.7 環境執行而產生錯誤.</p>
+<p>其他建議安裝套件
+Microsoft Remote Desktop</p>
+<p>Firefox</p>
+<p>OBS</p>
+<p>Visual Studio Code</p>
+<p>Visual Studio Code Distilled.pdf (for @gm users only)</p>
+<p>Flutter (Dart)</p>
+<p>其他提示
+Command + Shift + . (toggle hidden folders and files)</p>
 
 
-<p>電腦軟體與硬體簡介
-Type of Computer：
-super computer 超級電腦
-MainFrane 伺服器主機
-Server 伺服器
-PC 個人電腦
-Microcontroler 微電腦
-Mobile Phone 手機
-硬體名稱    說明  比喻
-CPU 中央處理器，電腦的心臟，速度越快效率越好。新一代的電腦甚至可以有多核心兩個以上的CPU。    如果將主機比喻為一家商店，那CPU可以說是店員，動作越快、反應越靈巧的店員可以增加銷售的速度。
-記憶體RAM  電腦系統運作時暫時儲存資料的地方，其大小也是影響電腦速率快慢的重要因素，建議入門最起碼可以使用2G。因為記憶體大小很重要、而且價格不貴、又不容易損壞，因此「寧可過剩、不要不足」。   猶如商店的賣場面積，賣場越大可以擺的東西越多，客人需要即可直接銷售，而不必進入貨倉中翻箱倒櫃，浪費時間、拖垮效率。
-硬碟  儲存系統軟體、應用軟體以及資料的儲存空間，目前一般大小約為數百G，一台主機可以裝多顆硬碟。   猶如貨倉的大小，貨倉越大當然可以囤積的商品越多。
-光碟機、
-燒錄機 光碟機：只能讀取CD、DVD含音樂、影片及資料，古董機。
-燒錄機：本身已經具備讀取功能，並且能夠將各類檔案燒錄於光碟片上，並製作為音樂CD、影片DVD、或純粹備份資料片等，為目前的主流規格。 <br>
-讀卡機 擁有不同的插槽、能夠讀取多種格式的記憶卡。  <br>
-綠色軟體 Greenware
-指一種免費、免安裝軟體，一般在網路上以無條件的方式發放的小型軟體。優點是檔案比較細小﹑不用安裝﹑刪除方便和只佔用少量系統資源，所以甚至可以放在 MP3 播放器或隨身碟中讀取。大部份綠色軟體更是開放源碼並不設權限、歡迎任何人士參與修改或增加功能。不過也有人將有版權的軟體透過一些技術，將它改成免安裝軟體，也稱為綠色軟體，此類軟體移除後直接刪除也不會將任何紀錄登錄檔訊息等留在本機電腦上。
-共享軟體 Shareware
-免費共用軟體，通常有「限期」或「功能限制」或是有條件免費使用 如：附加廣告。有些軟體的「試用版」也以共享軟體的形式於網路間分享以及提供下載。
-免費軟體 Freeware
-泛指一切不用金錢買回來的電腦軟體。開發者一般是因興趣或以分享性質而發放。亦有部份是因為不滿或希望改善現存軟體而自行開發另一個或替其最佳化程式。</p>
+<p>Mac OS X for Absolute Beginners.pdf (for @gm users only)</p>
+<p>Learn C on the Mac.pdf (for @gm users only)</p>
+<p>這裡以 MacBook Air 2012 年出廠, 硬體規格:</p>
+<p>macOS Catalina Version 10.15.4</p>
+<p>1.8 GHz Dual-Core Intel Core i5</p>
+<p>Memory $GB 1600 MHz DDR3</p>
+<p>Graphics Intel HD Graphics 4000 1536 MB</p>
+<p>的操作為例, 如何存活在機械設計工程系與精密機械工程科的網際內容管理課程.</p>
+<p>由於網際內容管理課程主要以 Ｗindows 10 64 位元操作系統中的 Python 3 可攜程式環境使用為主.</p>
+<p>從官方網站下載安裝 Python3
+因此 Catalina 系統中的首要任務, 便是安裝 Python 3:</p>
+<p>在 2020.05.15 從 https://www.python.org/downloads/mac-osx/ 可以下載安裝最新的 Python 3.8.3 解譯環境.</p>
+<p>安裝 pip3
+有了 python 3 環境之後, 就可以從 Lanuchpad -&gt; Other -&gt; Terminal 開啟終端機, 並從 get-pip.py 下載用來安裝 pip3 的程式碼, 以終端機上的指令進行安裝:</p>
+<p>1
+sudo python3 get-pip.py
+安裝 pip3 之後, 可以安裝 CMSiMDE 所需的 flask, flask_cors, lxml, bs4, markdown, pelican 以及 leo:</p>
+<p>1
+sudo pip3 install flask flask_cors lxml bs4 markdown pelican leo
+安裝 XQuartz
+之後, 就可以安裝 XQuartz, 以便使用 xterm 替代 terminal.</p>
+<p>接下來假如要使用 SciTE 作為文字編輯器, 建議透過 https://www.macports.org/install.php  先根據 Catalina 操作系統版本安裝 Macports 之後, 再利用:</p>
+<p>1
+sudo port install scite
+安裝 SciTE 文字編輯器.</p>
+<p>至此, 再加上 Catalina 原有的 git 指令, 使用者已經可以在 MacBook 上執行與 Windows 10 64 位元操作系統上相同的:</p>
+<p>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+git clone --recurse-submodules</p>
+<p>git add .</p>
+<p>git commit -m "commit message"</p>
+<p>git push</p>
+<p>git pull</p>
+<p>git submodule add</p>
+<p>git remote add</p>
+<p>git branch</p>
+<p>git merge
+等指令, 只是在執行 python 程式時, 必須使用:</p>
+<p>1
+2
+3
+python3 wsgi.py</p>
+<p>pip3 install certain_module
+否則直接使用 python 執行, 將會用 Python 2.7 環境執行而產生錯誤.</p>
+<p>其他建議安裝套件
+Microsoft Remote Desktop</p>
+<p>Firefox</p>
+<p>OBS</p>
+<p>Visual Studio Code</p>
+<p>Visual Studio Code Distilled.pdf (for @gm users only)</p>
+<p>Flutter (Dart)</p>
+<p>其他提示
+Command + Shift + . (toggle hidden folders and files)</p>
             </section>
 
             <section class="post-info">
                 <div class="post-share">
-                    <a class="twitter" href="https://twitter.com/share?text=2020 Fall CP 課程W9&amp;url=./2020-Fall-w9-bit-Windows.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a class="twitter" href="https://twitter.com/share?text=2020 Fall CP 課程&amp;url=./2020-Fall-w10-bit-Windows.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
                     </a>
-                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=./2020-Fall-w9-bit-Windows.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=./2020-Fall-w10-bit-Windows.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
                     </a>
-                    <a class="googleplus" href="https://plus.google.com/share?url=./2020-Fall-w9-bit-Windows.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <a class="googleplus" href="https://plus.google.com/share?url=./2020-Fall-w10-bit-Windows.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
                     </a>
                     <div class="clear"></div>
@@ -277,18 +389,18 @@ CPU 中央處理器，電腦的心臟，速度越快效率越好。新一代的�
 
 
                 <aside class="post-nav">
-                    <a class="post-nav-next" href="./2020-Fall-可攜程式-bit-Windows.html">
+                    <a class="post-nav-next" href="./2020-Fall-32-bit-Windows.html">
                         <section class="post-nav-teaser">
                             <i class="ic ic-arrow-left"></i>
-                                <h2 class="post-nav-title">2020 Fall CP 課程可攜式環境</h2>
-                            <p class="post-nav-excerpt">可攜程式環境 為了讓工程師可以在不同的 Windows 10 64 位元電腦上管理 CMSiMDE 網際內容管理系統, 因此需要 Python 解譯環境以及一個文字檔案的編輯器.</p>
+                                <h2 class="post-nav-title">2020 Fall CP 課程</h2>
+                            <p class="post-nav-excerpt">2018 Fall 一開始, 在一台已經 10 年的 32 位元的 Windows 7 操作系統中工作. 可攜的 Python 3.7.0 仍然可以配置, Leo...</p>
                         </section>
                     </a>
-                    <a class="post-nav-prev" href="./2020-Fall-w13-bit-Windows.html">
+                    <a class="post-nav-prev" href="./2020-Fall-w11-bit-Windows.html">
                         <section class="post-nav-teaser">
                             <i class="ic ic-arrow-right"></i>
-                                <h2 class="post-nav-title">2020 Fall CP 課程W13</h2>
-                            <p class="post-nav-excerpt">W13 Pelican Blog 內容與 Google Blogger 同步 利用 Windows 10 設定 -> 選擇預設網頁瀏覽器, 使用 Google Chrome...</p>
+                                <h2 class="post-nav-title">2020 Fall CP 課程W11</h2>
+                            <p class="post-nav-excerpt">以 SSH 維護倉儲 W10 - W11 由於在電腦教室時採用純 IPv6 協定上網, 因此為了能夠在近端將倉儲改版資料推送到目前只接受 IPv4 協定連線的...</p>
                         </section>
                     </a>
                     <div class="clear"></div>
